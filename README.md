@@ -46,6 +46,20 @@ Freelance analytics project analyzing sales performance across Amazon and Flipka
 - Compared cancellation and return rates by fulfillment type and platform
 - Analyzed refund rates by payment method
 
+### 📈 Power BI Dashboard
+Interactive 3-page dashboard built in Power BI covering funnel performance, revenue analysis, and regional and product insights.
+
+#### Page 1 — Funnel Overview
+![Funnel Overview](Page1_Funnel.png)
+
+#### Page 2 — Revenue Analysis
+![Revenue Analysis](Page2_Funnel.png)
+
+#### Page 3 — Regional & Product Performance
+![Regional and Product Performance](Page3_Funnel.png)
+
+> Download the `.pbix` file to explore the dashboard interactively in Power BI Desktop.
+
 ### 🛠️ Tools and Technologies
 - **Language:** Python, SQL
 - **Libraries:** Pandas
@@ -76,13 +90,14 @@ Freelance analytics project analyzing sales performance across Amazon and Flipka
 |------|-------------|
 | `data_cleaning.ipynb` | Data loading, cleaning, schema standardization, and merging |
 | `unified_sales.csv` | Cleaned and unified output table used for all SQL analysis |
+| `E-Commerce Funnel Analysis.pbix` | Power BI dashboard file |
 | `query1_funnel_overview.sql` | Full funnel overview by platform |
 | `query2_monthly_trends.sql` | Monthly order and cancellation trends by platform |
 | `query3_revenue_analysis.sql` | Gross and net revenue by platform and month |
 | `query4_top_products.sql` | Top 10 products by gross revenue |
 | `query5_return_rate.sql` | Return rate by product |
 | `query6_state_revenue.sql` | Top 10 states by net revenue |
-| `query7_state_cancellations_sq.sql` | Top 10 states by cancellation rate |
+| `query7_state_cancellations.sq.sql` | Top 10 states by cancellation rate |
 | `query8_fulfillment.sql` | Cancellation and return rates by fulfillment type |
 | `query9_payment_method.sql` | Orders and refund rate by payment method |
 | `query10_monthly_growth.sql` | Month-over-month revenue and refund trends |
@@ -91,8 +106,9 @@ Freelance analytics project analyzing sales performance across Amazon and Flipka
 - Handling real-world schema inconsistencies across two platforms with different data structures
 - Building a complete sales funnel from raw transaction data using SQL
 - Translating operational data into business insights around revenue leakage and performance
+- Designing a multi-page Power BI dashboard with DAX measures, slicers, and drill-through
 
 ### 🚀 Future Enhancements
-- Build a live Power BI dashboard connected directly to PostgreSQL
 - Add product category classification for deeper segmentation
 - Expand analysis to include seasonal trends across a full year
+- Connect Power BI dashboard live to PostgreSQL for real-time reporting
